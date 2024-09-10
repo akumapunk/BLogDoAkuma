@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #00cc66;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.card-container {
+    display: flex; /* Exibe os cards lado a lado */
+    flex-wrap: wrap; /* Permite quebra de linha para cards */
+    justify-content: space-around; /* Espaço entre os cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #2b2b2b; /* Cor de fundo do card */
+    border-radius: 8px;
+    width: 300px; /* Largura fixa para cada card */
+    margin: 20px; /* Margem entre os cards */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para garantir que o conteúdo não transborde */
+    transition: transform 0.2s; /* Animação suave ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #00cc66; /* Cor dos títulos */
+}
+
+.card-description {
+    font-size: 0.9em;
+    color: #ddd;
+}
